@@ -48,5 +48,5 @@ def organise_files(base_path):
     move_files(base_path)
 
 if __name__ == "__main__":
-    folder_to_organise = input("Enter path to a folder you want to organise")
+    folder_to_organise = input("Enter path to a folder you want to organise: ")
     organise_files(folder_to_organise)
