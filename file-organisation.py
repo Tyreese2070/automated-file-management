@@ -32,7 +32,7 @@ def move_files(base_path):
         file_ext = Path(item).suffix.lower()
         moved = False
 
-        for category, extensions in FILE_CATEGORIES.item():
+        for category, extensions in FILE_CATEGORIES.items():
             if file_ext in extensions:
                 shutil.move(item_path, os.path.join(base_path, category, item))
                 print(f"Moved: {item} to {category}")
